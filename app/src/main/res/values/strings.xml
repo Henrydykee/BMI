@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="enter_your_weight">Enter Your Weight in pounds</string>
+    <string name="enter_your_height">Enter Your Height in inch</string>
+    <string name="caculate">Caculate</string>
+    <string name="todo">TODO</string>
+</resources>

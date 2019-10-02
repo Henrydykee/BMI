@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weight_text_view"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_weight"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/height_text_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_height"
+        android:layout_below="@+id/weight_text_view"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:background="@color/bisque"
+        android:id="@+id/calculate_button"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:onClick="calculate"
+        android:layout_centerHorizontal="true"
+        android:text="@string/caculate"
+        android:layout_below="@+id/height_text_view"/>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/bmi_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_button"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        tools:text="my bmi"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/image_view"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bmi_text_view"
+        android:layout_marginBottom="16dp"
+        tools:src="@drawable/healthy"
+        android:contentDescription="@string/todo"/>
+
+
+
+</RelativeLayout>
